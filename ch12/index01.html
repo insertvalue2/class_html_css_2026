@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .m-block {
+        background-color: #ffccbc;
+        padding: 10px;
+        margin-bottom: 10px;
+        /* div 태그 등 기본 display 속성은 block 이다 */
+        display: block;
+      }
+
+      .m-inline {
+        background-color: #c8e6c9;
+        border: 2px solid #333;
+        padding: 10px;
+        /* display: inline; */
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>문서 흐름 이해하기</h2>
+
+    <h3>1.블록 요소(수직으로 쌓임)</h3>
+    <div class="m-block">블록 요소1</div>
+    <div class="m-block">블록 요소2</div>
+    <div class="m-block">블록 요소3</div>
+
+    <h3>2. 인라인 요소(수평으로 쌓임)</h3>
+    <span class="m-inline">인라인 요소 1</span>
+    <span class="m-inline">인라인 요소 2</span>
+    <span class="m-inline">인라인 요소 3</span>
+  </body>
+</html>
